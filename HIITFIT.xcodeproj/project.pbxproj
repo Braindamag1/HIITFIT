@@ -16,6 +16,12 @@
 		419E412A284A4AD900E992A6 /* HIITFITUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E4129284A4AD900E992A6 /* HIITFITUITestsLaunchTests.swift */; };
 		419E4138284A505200E992A6 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E4137284A505200E992A6 /* WelcomeView.swift */; };
 		419E413A284A505C00E992A6 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E4139284A505C00E992A6 /* ExerciseView.swift */; };
+		419E413C284B414F00E992A6 /* ExerciseHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E413B284B414F00E992A6 /* ExerciseHeaderView.swift */; };
+		419E4147284B626600E992A6 /* step-up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 419E4143284B626500E992A6 /* step-up.mp4 */; };
+		419E4148284B626600E992A6 /* sun-salute.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 419E4144284B626500E992A6 /* sun-salute.mp4 */; };
+		419E4149284B626600E992A6 /* burpee.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 419E4145284B626500E992A6 /* burpee.mp4 */; };
+		419E414A284B626600E992A6 /* squat.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 419E4146284B626600E992A6 /* squat.mp4 */; };
+		419E414C284B655100E992A6 /* ExerciseRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E414B284B655100E992A6 /* ExerciseRatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,12 @@
 		419E4129284A4AD900E992A6 /* HIITFITUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIITFITUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		419E4137284A505200E992A6 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		419E4139284A505C00E992A6 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
+		419E413B284B414F00E992A6 /* ExerciseHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseHeaderView.swift; sourceTree = "<group>"; };
+		419E4143284B626500E992A6 /* step-up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "step-up.mp4"; sourceTree = "<group>"; };
+		419E4144284B626500E992A6 /* sun-salute.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sun-salute.mp4"; sourceTree = "<group>"; };
+		419E4145284B626500E992A6 /* burpee.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = burpee.mp4; sourceTree = "<group>"; };
+		419E4146284B626600E992A6 /* squat.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = squat.mp4; sourceTree = "<group>"; };
+		419E414B284B655100E992A6 /* ExerciseRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseRatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +110,7 @@
 		419E410B284A4AD700E992A6 /* HIITFIT */ = {
 			isa = PBXGroup;
 			children = (
+				419E4142284B625300E992A6 /* Videos */,
 				419E4136284A503300E992A6 /* View */,
 				419E410C284A4AD700E992A6 /* HIITFITApp.swift */,
 				419E4110284A4AD900E992A6 /* Assets.xcassets */,
@@ -137,8 +150,21 @@
 				419E410E284A4AD700E992A6 /* ContentView.swift */,
 				419E4137284A505200E992A6 /* WelcomeView.swift */,
 				419E4139284A505C00E992A6 /* ExerciseView.swift */,
+				419E413B284B414F00E992A6 /* ExerciseHeaderView.swift */,
+				419E414B284B655100E992A6 /* ExerciseRatingView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		419E4142284B625300E992A6 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				419E4145284B626500E992A6 /* burpee.mp4 */,
+				419E4146284B626600E992A6 /* squat.mp4 */,
+				419E4143284B626500E992A6 /* step-up.mp4 */,
+				419E4144284B626500E992A6 /* sun-salute.mp4 */,
+			);
+			path = Videos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,7 +272,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				419E4114284A4AD900E992A6 /* Preview Assets.xcassets in Resources */,
+				419E4149284B626600E992A6 /* burpee.mp4 in Resources */,
 				419E4111284A4AD900E992A6 /* Assets.xcassets in Resources */,
+				419E4148284B626600E992A6 /* sun-salute.mp4 in Resources */,
+				419E414A284B626600E992A6 /* squat.mp4 in Resources */,
+				419E4147284B626600E992A6 /* step-up.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +302,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				419E413A284A505C00E992A6 /* ExerciseView.swift in Sources */,
+				419E414C284B655100E992A6 /* ExerciseRatingView.swift in Sources */,
 				419E410F284A4AD700E992A6 /* ContentView.swift in Sources */,
+				419E413C284B414F00E992A6 /* ExerciseHeaderView.swift in Sources */,
 				419E4138284A505200E992A6 /* WelcomeView.swift in Sources */,
 				419E410D284A4AD700E992A6 /* HIITFITApp.swift in Sources */,
 			);
