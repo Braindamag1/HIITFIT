@@ -10,9 +10,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            Text("Welcome")
-            Text("Exercise 1")
-            Text("Exercise 2")
+            /// Range is half open interval not including an upper bounds
+            ForEach(0..<4) { index in
+                ExerciseView(index: index)
+            }
         }
         .tabViewStyle(.page)
         .indexViewStyle(.page(backgroundDisplayMode: .always))

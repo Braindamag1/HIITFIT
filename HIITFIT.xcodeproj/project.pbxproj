@@ -14,6 +14,8 @@
 		419E411E284A4AD900E992A6 /* HIITFITTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E411D284A4AD900E992A6 /* HIITFITTests.swift */; };
 		419E4128284A4AD900E992A6 /* HIITFITUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E4127284A4AD900E992A6 /* HIITFITUITests.swift */; };
 		419E412A284A4AD900E992A6 /* HIITFITUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E4129284A4AD900E992A6 /* HIITFITUITestsLaunchTests.swift */; };
+		419E4138284A505200E992A6 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E4137284A505200E992A6 /* WelcomeView.swift */; };
+		419E413A284A505C00E992A6 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E4139284A505C00E992A6 /* ExerciseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		419E4123284A4AD900E992A6 /* HIITFITUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HIITFITUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		419E4127284A4AD900E992A6 /* HIITFITUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIITFITUITests.swift; sourceTree = "<group>"; };
 		419E4129284A4AD900E992A6 /* HIITFITUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIITFITUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		419E4137284A505200E992A6 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		419E4139284A505C00E992A6 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,8 @@
 		419E410B284A4AD700E992A6 /* HIITFIT */ = {
 			isa = PBXGroup;
 			children = (
+				419E4136284A503300E992A6 /* View */,
 				419E410C284A4AD700E992A6 /* HIITFITApp.swift */,
-				419E410E284A4AD700E992A6 /* ContentView.swift */,
 				419E4110284A4AD900E992A6 /* Assets.xcassets */,
 				419E4112284A4AD900E992A6 /* Preview Content */,
 			);
@@ -125,6 +129,16 @@
 				419E4129284A4AD900E992A6 /* HIITFITUITestsLaunchTests.swift */,
 			);
 			path = HIITFITUITests;
+			sourceTree = "<group>";
+		};
+		419E4136284A503300E992A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				419E410E284A4AD700E992A6 /* ContentView.swift */,
+				419E4137284A505200E992A6 /* WelcomeView.swift */,
+				419E4139284A505C00E992A6 /* ExerciseView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				419E413A284A505C00E992A6 /* ExerciseView.swift in Sources */,
 				419E410F284A4AD700E992A6 /* ContentView.swift in Sources */,
+				419E4138284A505200E992A6 /* WelcomeView.swift in Sources */,
 				419E410D284A4AD700E992A6 /* HIITFITApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
