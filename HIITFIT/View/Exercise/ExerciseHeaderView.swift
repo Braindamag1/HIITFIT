@@ -9,12 +9,13 @@ import SwiftUI
 
 
 struct ExerciseHeaderView: View {
-    let exerciseName:String
+    let titleText:String
     var body: some View {
         VStack {
-            Text(exerciseName)
+            Text(titleText)
                 .font(.largeTitle)
             HStack {
+                Image(systemName: "hand.wave")
                 Image(systemName: "1.circle")
                 Image(systemName: "2.circle")
                 Image(systemName: "3.circle")
@@ -28,9 +29,9 @@ struct ExerciseHeaderView: View {
 struct ExerciseHeaderView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ExerciseHeaderView(exerciseName: "placeholder")
+            ExerciseHeaderView(titleText: "placeholder")
                 .previewLayout(.sizeThatFits)
-            ExerciseHeaderView(exerciseName: "placeholder")
+            ExerciseHeaderView(titleText: "placeholder")
                 .preferredColorScheme(.dark)
                 .previewLayout(.sizeThatFits)
             
